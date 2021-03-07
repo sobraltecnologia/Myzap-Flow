@@ -87,8 +87,9 @@ restApi.use(bodyParser.json());
             console.info(`Servidor HTTP da API do WhatsApp rodando em: http://localhost:${process.env.wpPORT}/`);
             console.info(`Servidor HTTP da RestAPI rodando em: http://localhost:${process.env.PORT}/`);
     }
-}());
-
+// no meu nao rodou --> }());
+// fechei assim e n apresentou erro ao rodar index.js
+ });
 WhatsApp.initVenom().then(() => {
     venomApi.use(venomAuth);
 
